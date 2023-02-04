@@ -1,4 +1,5 @@
 states=['Total',
+'karnataka'
  'Maharashtra',
  'Delhi',
  'Tamil Nadu',
