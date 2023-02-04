@@ -24,7 +24,7 @@ def webhook():
 
 @app.route('/')
 def index():
-	return "hello anmol"
+	return "hello anmol how are you"
 
 def start(bot,update):
 	print(update)

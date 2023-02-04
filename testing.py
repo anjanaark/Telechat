@@ -181,7 +181,10 @@ def hindiNews():
             l.append(link.text)
             l.append(url+link.get('href'))
             lis.append(l)
+            print("hello world")
     return lis
+
+    
 
 
 
