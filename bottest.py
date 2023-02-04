@@ -24,13 +24,13 @@ def webhook():
 
 @app.route('/')
 def index():
-	return "hello anmol"
+	return "hello anmol how are you hope youre fine"
 
 def start(bot,update):
 	print(update)
 	author=update.message.from_user.first_name
 	lastname=update.message.from_user.last_name
-	reply="Hi ! {}".format(author+" "+lastname)+"This Bot can be used: \n->To Track Coronavirus Cases based on StateWise (/selectstate) and City wise(/selectcity) \n->To Register Problem to Higher Authorities (/help)\n->To get Helpline numbers and share your location and contact in case of emergency (/helpline)\n ->Answers To Frequent Asked Questions about COVID19 (/faq)\n->To see the fake news viral in Social Media & read it to verify it in Hindi (/hindifakenewscheck) & in English (/englishfakenewscheck)"
+	reply="Hi ! human {}".format(author+" "+lastname)+"This Bot can be used: \n->To Track Coronavirus Cases based on StateWise (/selectstate) and City wise(/selectcity) \n->To Register Problem to Higher Authorities (/help)\n->To get Helpline numbers and share your location and contact in case of emergency (/helpline)\n ->Answers To Frequent Asked Questions about COVID19 (/faq)\n->To see the fake news viral in Social Media & read it to verify it in Hindi (/hindifakenewscheck) & in English (/englishfakenewscheck)"
 	bot.send_message(chat_id=update.message.chat_id,text=reply)
 
 
